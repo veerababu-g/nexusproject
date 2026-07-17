@@ -43,7 +43,7 @@ export default function Footer() {
         <div>
           <h3>Contact</h3>
 
-          <p>📧 nexusweb@gmail.com</p>
+          <p>📧 nexusitweb@gmail.com</p>
 
           <p>📞 +91 6302533612</p>
 

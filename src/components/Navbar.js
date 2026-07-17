@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="container">
       <div className="navbar">
         <img className='logo' src='nexus.svg' alt='Nexus Web logo featuring geometric design in a navigation header'/>
-        <Link to="/" className="brand">Nexus<span>ITWeb</span></Link>
+        <Link to="/" className="brand">NexusIT<span>Web</span></Link>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/services">Services</Link>

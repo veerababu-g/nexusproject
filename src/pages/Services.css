@@ -1,0 +1,145 @@
+.services-page{
+    padding:80px 8%;
+    background:#0F1526;
+    min-height:100vh;
+}
+
+.services-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.services-header h1{
+    font-size:42px;
+    color:#ebecee;
+    margin-bottom:15px;
+}
+
+.services-header p{
+    color:#e6e8ec;
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#dddbdb;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+.service-icon{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:34px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    color:#0f172a;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.service-card ul{
+    list-style:none;
+    padding:0;
+    margin-bottom:25px;
+}
+
+.service-card ul li{
+    padding:8px 0;
+    color:#334155;
+    font-size:15px;
+}
+
+.service-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.service-card button:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+.services-page{
+    padding:50px 20px;
+}
+
+.services-header h1{
+    font-size:32px;
+}
+
+.services-header p{
+    font-size:16px;
+}
+
+.service-card{
+    padding:25px;
+}
+
+}
+
+.page-header {
+  display: flex;
+  justify-content: flex-center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.home-btn:active {
+  transform: scale(0.98);
+}

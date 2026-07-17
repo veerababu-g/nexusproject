@@ -1,0 +1,131 @@
+:root{
+  --bg-0:#0F1526;
+  --bg-1:#161E38;
+  --bg-2:#1D2749;
+  --line:#3A4470;
+  --ink:#EDEFF5;
+  --ink-dim:#9AA3C4;
+  --cyan:#4CC9C0;
+  --gold:#E8B34C;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+   background:var(--bg-0);
+  color:var(--ink);
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+}
+
+a{ color:inherit; text-decoration:none; }
+
+.container{ max-width:1000px; margin:0 auto; padding:0 24px; }
+
+/* ---- Navbar ---- */
+.navbar{
+  display:flex;  align-items:center;
+  padding:10px ; border-bottom:none ;
+}
+.navbar .brand{ font-weight:400; font-size:60px; margin-right: 280px; padding: 0px; }
+.navbar .logo{height: 200px; width: 200px; margin-left: 0px;}
+.navbar .brand span{ color:var(--cyan); }
+.navbar nav a{ margin-left:26px;  font-size:16px; }
+.navbar nav a:hover{ color:var(--ink); }
+
+/* ---- Hero ---- */
+.hero{ padding:80px 0 60px; }
+.hero h1{ font-size:44px; line-height:1.1; max-width:640px; margin:0 0 18px; }
+.hero p{ color:var(--ink-dim); max-width:480px; font-size:16px; line-height:1.6; }
+.hero .btn{ margin-top:26px; }
+
+/* ---- Buttons ---- */
+.btn{
+  display:inline-block; background:var(--cyan); color:#0F1526;
+  padding:12px 22px; border-radius:8px; font-weight:600; border:none;
+  cursor:pointer; font-size:14.5px;
+}
+.btn.secondary{ background:transparent;  }
+.btn:disabled{ opacity:0.6; cursor:not-allowed; }
+
+/* ---- Cards / sections ---- */
+.section{ padding:50px 0; border-top:1px }
+.section h2{ font-size:26px; margin-bottom:24px; }
+.grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.card{
+  background:var(--bg-1); border:1px solid var(--line); border-radius:12px; padding:22px;
+}
+.card h3{ margin:0 0 8px; }
+.card p{ color:var(--ink-dim); font-size:14px; line-height:1.55; margin:0; }
+.card .price{ font-family:monospace; color:var(--cyan); font-weight:700; margin-top:14px; display:block; }
+
+/* ---- Forms ---- */
+.form-field{ margin-bottom:16px; display:flex; flex-direction:column; gap:6px; }
+.form-field label{ font-size:13px; color:var(--ink-dim); }
+.form-field input, .form-field textarea, .form-field select{
+  background:var(--bg-2); border:1px solid var(--line); border-radius:8px;
+  padding:11px 13px; color:var(--ink); font-size:14.5px; font-family:inherit;
+}
+.form-field textarea{ min-height:120px; resize:vertical; }
+.form-card{ max-width:520px; }
+.form-msg{ margin-top:14px; font-size:14px; }
+.form-msg.ok{ color:var(--cyan); }
+.form-msg.err{ color:#F27878; }
+
+/* ---- Footer ---- */
+.footer{ padding:30px 0; color:var(--ink-dim); font-size:13px; border-top:1px solid var(--line); }
+
+/* ---- Admin ---- */
+.admin-shell{ min-height:100vh; }
+.admin-topbar{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 28px; border-bottom:1px solid var(--line);
+}
+.admin-login-wrap{
+  min-height:100vh; display:flex; align-items:center; justify-content:center;
+}
+table{ width:100%; border-collapse:collapse; margin-top:20px; font-size:14px; }
+th, td{ text-align:left; padding:12px 10px; border-bottom:1px solid var(--line); }
+th{ color:var(--ink-dim); font-weight:600; font-size:12.5px; text-transform:uppercase; letter-spacing:0.04em; }
+tr:hover td{ background:var(--bg-1); }
+.status-pill{
+  font-size:11.5px; padding:3px 9px; border-radius:20px; border:1px solid var(--line);
+}
+.status-pill.new{ color:var(--gold); border-color:var(--gold); }
+.status-pill.contacted{ color:var(--cyan); border-color:var(--cyan); }
+.status-pill.closed{ color:var(--ink-dim); }
+.admin-actions{ display:flex; gap:10px; margin:20px 0; }
+.admin-page{ padding:26px 28px; }
+
+@media (max-width:720px){
+  .grid3{ grid-template-columns:1fr; }
+  .hero h1{ font-size:32px; }
+}
+.page-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.home-btn:active {
+  transform: scale(0.98);
+}
